@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <title>My home</title>
+    <link href="assets/img/icons/home-g052952035_640.png" rel="icon">
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="topbar">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none;"><h2><strong>KC326</strong></h2></a>
+            </div>
+            <i class="bi bi-bell-fill"></i>
+            <div class="user">
+                <label for="profile"><img src="assets/img/icons/user.png" alt=""></label>
+                <input type="checkbox" id="profile">
+                <div class="user-profile">
+                    <ul class="list-profile">
+                        <li class="profile-item1">ADMIN</li>
+                        <li class="profile-item">Name : Nhóm 02</li>
+                        <li class="profile-item">ID   : KC326</li>
+                        <li style="text-align: center;"><a href="/Login Form/index.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Menu">
+                <label for="Menu-icon"><i class="bi bi-list"></i></label>
+                <input type="checkbox" id="Menu-icon">
+                <div class="Menu-list">
+                    <ul class="list-topbar">
+                        <li class="menu-item"><a href="/index.html"> Home</a></li>
+                        <li class="menu-item"><a href="dashboard.html"> DashBoard</a></li>
+                        <li class="menu-item"><a href="time.html"> Setting time</a></li>
+                        <li class="menu-item"><a href="chart.html"> Chart</a></li>
+                        <li class="menu-item"><a href="/Login Form/index.html"> Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <a href="https://www.ctu.edu.vn/"><img src="assets/img/1200px-Logo_Dai_hoc_Can_Tho.svg.png" alt="logo"></a>
+            <ul>
+                <li>
+                    <a class="sidebar-link" href="dashboard.html">
+                        <i class="bi bi-speedometer2"></i>
+                        <div>DashBoard</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidebar-link" href="time.html">
+                        <i class="bi bi-alarm"></i>
+                        <div>Setting Time</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidebar-link active" href="#">
+                        <i class="bi bi-graph-up"></i>
+                        <div>Chart</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="title">
+                <h1><strong>Hello</strong></h1>
+            </div>
+            <div class="navbar">
+                <nav class="menu">
+                    <ul>
+                        <li><a class="navbar-link" href="/index.html"><strong>My Home</strong></a></li>
+                        <li><a class="navbar-link" href="dashboard.html"><strong> DashBoard</strong></a></li>
+                        <li><a class="navbar-link" href="time.html"><strong>Setting time</strong></a></li>
+                        <li><a class="navbar-link active" href="#"><strong>Chart</strong></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-chart-1">
+                <div class="chart-1">
+                    <h2 class="card-title">Line chart</h2>
+                    <canvas id="lineChart"></canvas>
+                </div>
+                <div class="gauge-energy">
+                    <div class="card">
+                        <div class="gauge-name">
+                            <h2 class="card-title">Điện năng tiêu thụ</h2>
+                        </div>
+                        <div class="box">
+                            <div class="circle"></div>
+                            <div class="text">
+                                <h2></h2>
+                                <h3>MW / s<h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-chart-2">
+                <div class="chart-2">
+                    <h2 class="card-title">Bar chart</h2>
+                    <canvas id="barChart"></canvas>
+                </div>
+                <div class="chart-2">
+                    <h2 class="card-title">Area chart</h2>
+                    <canvas id="areaChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+
+     <!-- Include firebase database -->
+     <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+ 
+     <!-- Firebase configuration -->
+     <script>
+         const firebaseConfig = {
+             apiKey: "AIzaSyB28GmQ47oFKrsiKBmAO5TChn4TDgvM0q4",
+             authDomain: "kc326-9402a.firebaseapp.com",
+             databaseURL: "https://kc326-9402a-default-rtdb.asia-southeast1.firebasedatabase.app",
+             projectId: "kc326-9402a",
+             storageBucket: "kc326-9402a.appspot.com",
+             messagingSenderId: "937481384455",
+             appId: "1:937481384455:web:edc9e4a6998349a5e6b0a2"
+         };
+         // Initialize Firebase
+         firebase.initializeApp(firebaseConfig);
+     </script>
+    <script src="/assets/vendor/base/vendor.bundle.base.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/chart.js"></script>
+    <script src="assets/js/profile.js"></script>
+
+</body>
+
+</html>

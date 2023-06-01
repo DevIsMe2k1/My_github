@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <title>My home</title>
+    <link href="assets/img/icons/home-g052952035_640.png" rel="icon">
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="topbar">
+            <div class="logo">
+                <a href="/index.html" style="text-decoration: none;"><h2><strong>KC326</strong></h2></a>
+            </div>
+            <i class="bi bi-bell-fill"></i>
+            <div class="user">
+                <label for="profile"><img src="assets/img/icons/user.png" alt=""></label>
+                <input type="checkbox" id="profile">
+                <div class="user-profile">
+                    <ul class="list-profile">
+                        <li class="profile-item1">ADMIN</li>
+                        <li class="profile-item">Name : Nhóm 02</li>
+                        <li class="profile-item">ID   : KC326</li>
+                        <li style="text-align: center;"><a href="/Login Form/index.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Menu">
+                <label for="Menu-icon"><i class="bi bi-list"></i></label>
+                <input type="checkbox" id="Menu-icon">
+                <div class="Menu-list">
+                    <ul class="list-topbar">
+                        <li class="menu-item"><a href="/index.html"> Home</a></li>
+                        <li class="menu-item"><a href="dashboard.html"> DashBoard</a></li>
+                        <li class="menu-item"><a href="time.html"> Setting time</a></li>
+                        <li class="menu-item"><a href="chart.html"> Chart</a></li>
+                        <li class="menu-item"><a href="/Login Form/index.html"> Log Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <a href="https://www.ctu.edu.vn/"><img src="assets/img/1200px-Logo_Dai_hoc_Can_Tho.svg.png" alt="logo"></a>
+            <ul>
+                <li>
+                    <a class="sidebar-link" href="dashboard.html">
+                        <i class="bi bi-speedometer2"></i>
+                        <div>DashBoard</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidebar-link active" href="#">
+                        <i class="bi bi-alarm"></i>
+                        <div>Setting Time</div>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidebar-link" href="chart.html">
+                        <i class="bi bi-graph-up"></i>
+                        <div>Chart</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="title">
+                <h1><strong>hello</strong></h1>
+            </div>
+            <div class="navbar">
+                <nav class="menu">
+                    <ul>
+                        <li><a class="navbar-link" href="/index.html"><strong>My Home</strong></a></li>
+                        <li><a class="navbar-link" href="dashboard.html"><strong> DashBoard</strong></a></li>
+                        <li><a class="navbar-link active" href="#"><strong>Setting time</strong></a></li>
+                        <li><a class="navbar-link" href="chart.html"><strong>Chart</strong></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="timer-room-1">
+                <div class="card">
+                    <div class="room-title">
+                        <h2><strong>Living Room</strong></h2>
+                    </div>
+                    <div class="lights">
+                        <div class="living-room">
+                            <label class="switch" for="living-room-switch">
+                                <input type="checkbox" id="living-room-switch">
+                                <span class="slider"></span>
+                            </label>
+                            <i class="bi bi-lightbulb-fill"></i>
+                        </div>
+                    </div>
+                    <div class="setting-timer">
+                        <h3>Setting Timer</h3>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton-living-room"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hẹn giờ bật tắt
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-living-room">
+                                <a class="dropdown-item1" href="#">7 : 00 AM</a>
+                                <a class="dropdown-item1" href="#">12 : 00 AM</a>
+                                <a class="dropdown-item1" href="#">8 : PM</a>
+                                <a class="dropdown-item1" href="#">11 : PM</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="room-title">
+                        <h2><strong>Kitchen Room</strong></h2>
+                    </div>
+                    <div class="lights">
+                        <div class="kitchen">
+                            <label class="switch" for="kitchen-switch">
+                                <input type="checkbox" id="kitchen-switch">
+                                <span class="slider"></span>
+                            </label>
+                            <i class="bi bi-lightbulb-fill"></i>
+                        </div>
+                    </div>
+                    <div class="setting-timer">
+                        <h3>Setting Timer</h3>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton-kitchen"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hẹn giờ bật tắt
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-kitchen">
+                                <a class="dropdown-item2" href="#">7 : 00 AM</a>
+                                <a class="dropdown-item2" href="#">12 : 00 AM</a>
+                                <a class="dropdown-item2" href="#">8 : PM</a>
+                                <a class="dropdown-item2" href="#">11 : PM</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timer-room-2">
+                <div class="card">
+                    <div class="room-title">
+                        <h2><strong>Bed Room</strong></h2>
+                    </div>
+                    <div class="lights">
+                        <div class="bed-room">
+                            <label class="switch" for="bed-room-switch">
+                                <input type="checkbox" id="bed-room-switch">
+                                <span class="slider"></span>
+                            </label>
+                            <i class="bi bi-lightbulb-fill"></i>
+                        </div>
+                    </div>
+                    <div class="setting-timer">
+                        <div class="timer-center">
+                            <h3>Setting Timer</h3>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton-bed-room"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Hẹn giờ bật tắt
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-bed-room">
+                                    <a class="dropdown-item3" href="#">7 : 00 AM</a>
+                                    <a class="dropdown-item3" href="#">12 : 00 AM</a>
+                                    <a class="dropdown-item3" href="#">8 : PM</a>
+                                    <a class="dropdown-item3" href="#">11 : PM</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="room-title">
+                        <h2><strong>For All</strong></h2>
+                    </div>
+                    <div class="lights">
+                        <div class="living-room">
+                            <h4>Living room light</h4>
+                            <i class="bi bi-lightbulb-fill"></i>
+                        </div>
+                        <div class="kitchen">
+                            <h4>Kitchen light</h4>
+                            <i class="bi bi-lightbulb-fill"></i>
+                        </div>
+                        <div class="bed-room">
+                            <h4>Bed room light</h4>
+                            <i class="bi bi-lightbulb-fill"></i>
+                        </div>
+                    </div>
+                    <div class="setting-timer">
+                        <h3>Setting Timer for all</h3>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton-for-all"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hẹn giờ bật tắt
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton-for-all">
+                                <a class="dropdown-item4" href="#">7 : 00 AM</a>
+                                <a class="dropdown-item4" href="#">12 : 00 AM</a>
+                                <a class="dropdown-item4" href="#">8 : PM</a>
+                                <a class="dropdown-item4" href="#">11 : PM</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+
+    <!-- Include firebase database -->
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+
+    <!-- Firebase configuration -->
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyB28GmQ47oFKrsiKBmAO5TChn4TDgvM0q4",
+            authDomain: "kc326-9402a.firebaseapp.com",
+            databaseURL: "https://kc326-9402a-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "kc326-9402a",
+            storageBucket: "kc326-9402a.appspot.com",
+            messagingSenderId: "937481384455",
+            appId: "1:937481384455:web:edc9e4a6998349a5e6b0a2"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="assets/js/light.js"></script>
+    <script src="assets/js/settingTime.js"></script>
+    <script src="assets/js/clock.js"></script>
+    <script src="assets/js/profile.js"></script>
+    <script src="/assets/vendor/base/vendor.bundle.base.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+</body>
+
+</html>
